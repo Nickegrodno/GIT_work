@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "babel-cli index.js",
+    "start": "babel-node index.js",
     "test": "mocha --compilers js:babel-core/register  --require ./test/test_helper.js  --recursive",
     "test:watch": "npm run test -- --watch"
   },
