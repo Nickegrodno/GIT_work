@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "babel-node index.js",
+    "start": "babel-cli index.js",
     "test": "mocha --compilers js:babel-core/register  --require ./test/test_helper.js  --recursive",
     "test:watch": "npm run test -- --watch"
   },
@@ -20,7 +20,8 @@
   "dependencies": {
     "immutable": "^3.7.6",
     "redux": "^3.3.1",
-    "socket.io": "^1.4.5"
+    "socket.io": "^1.4.5",
+    "ssh-key-to-pem": "^0.11.1"
   },
   "babel": {
     "presets": [
